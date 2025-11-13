@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Empire Events</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Empire Events</h1>
+  <button id="cart-btn">Cart (<span id="cart-count">0</span>)</button>
+</header>
+
+<section id="products"></section>
+
+<section id="cart" class="hidden">
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+  <h3>Total: ₹<span id="cart-total">0</span></h3>
+  <button id="checkout">Checkout</button>
+  <button onclick="document.getElementById('cart').classList.add('hidden')">Close</button>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
