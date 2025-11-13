@@ -1,88 +1,49 @@
-📦 Empire Events – Full AWS Deployment (S3 + CloudFront + Elastic Beanstalk + RDS MySQL)
+🌐 Empire Events – AWS Cloud Deployment
 
-A complete cloud-hosted E-Commerce platform deployed on Amazon Web Services.
+Complete Cloud-Based E-Commerce Platform built using Amazon Web Services (AWS)
 
 🚀 Project Overview
+Empire Events is a 3-tier cloud application deployed on AWS, designed to simulate a real production-level architecture used by modern companies.
+This project demonstrates:
+Static hosting on Amazon S3
+Global delivery using CloudFront
+Node.js backend hosted on Elastic Beanstalk
+MySQL database running on Amazon RDS
+Secure VPC networking and IAM roles
+End-to-end deployment and integration
 
-Empire Events is a cloud-native E-Commerce web application deployed using a modern, production-ready AWS architecture.
-It follows a three-tier design:
+🏗️ Architecture Diagram
 
-Frontend: HTML, CSS, JavaScript (Hosted on S3 + CloudFront)
-
-Backend: Node.js API (Hosted on Elastic Beanstalk)
-
-Database: Amazon RDS (MySQL)
-
-The goal of the project is to demonstrate real-world AWS cloud deployment used by companies for scalable web applications.
-
-🏗️ Architecture
 User → CloudFront CDN
           ↓
-     Amazon S3 (Static Frontend)
+     Amazon S3 (Frontend)
           ↓
-Elastic Beanstalk (Node.js Backend)
+Elastic Beanstalk (Node.js API)
           ↓
       Amazon RDS MySQL
 
 
-🎯 Region: us-east-1
-🎯 Includes Public Subnets (for EB) & Private Subnets (for RDS)
+🛠️ Deployment Steps
 
-🔧 Technologies Used
-Frontend
+1️⃣ Create RDS MySQL
+2️⃣ Deploy Backend on Elastic Beanstalk
+3️⃣ Deploy Frontend on S3
+4️⃣ Create CloudFront Distribution
 
-HTML5
+🧪 Testing
 
-CSS3
+✔ Frontend loads through CloudFront
+✔ API returns JSON (/products)
+✔ RDS data loads on webpage
+✔ Backend → RDS connection successful
 
-JavaScript
+🎯 Skills Demonstrated
 
-Backend
-
-Node.js
-
-Express.js
-
-AWS Services
-
-Amazon S3
-
-Amazon CloudFront
-
-Elastic Beanstalk
-
-Amazon RDS (MySQL)
-
-EC2 (via EB)
-
-IAM
-
+AWS S3 Hosting
+CloudFront CDN
+Elastic Beanstalk Deployment
+Connecting Node.js API to RDS
+SQL Database Operations
+IAM Roles & Security Groups
 VPC Networking
-
-🛠️ Step-by-Step Deployment
-1. Create RDS MySQL
-2. Deploy Backend on Elastic Beanstalk
-3. Deploy Frontend to S3
-4. Add CloudFront CDN
-
-🧪 Testing the Application
-Test 1: Frontend loads
-
-✔ CloudFront URL opens website
-
-Test 2: Backend API works
-
-✔ /products returns JSON
-
-Test 3: Database connection
-
-✔ Products displayed from RDS
-
-🎯 Final Result
-
-Your Empire Events project is:
-
-✔ Fully deployed on AWS
-✔ Secure & scalable
-✔ Uses real cloud infrastructure
-✔ Follows 3-tier architecture
+End-to-end cloud integration
